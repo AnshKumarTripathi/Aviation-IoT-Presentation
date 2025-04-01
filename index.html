@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IoT in Aviation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="bi bi-broadcast"></i> IoT in Aviation</a>
+      <div class="d-flex">
+        <a href="simulation.html" class="btn btn-light mx-1"><i class="bi bi-play-circle"></i> Simulation</a>
+        <button id="prevBtn" class="btn btn-light mx-1">← Previous</button>
+        <button id="nextBtn" class="btn btn-light mx-1">Next →</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="progress fixed-top" style="margin-top: 56px;">
+    <div id="progressBar" class="progress-bar" role="progressbar" style="width: 5%"></div>
+  </div>
+
+  <main class="container mt-5 pt-5">
+    <section class="slide active" id="slide1">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title"><i class="bi bi-cpu"></i> Introduction to IoT</h2>
+          <div class="content">
+            <div class="row">
+              <div class="col-md-6">
+                <h5><i class="bi bi-diagram-3"></i> Definition of IoT</h5>
+                <ul>
+                  <li>Network of physical objects</li>
+                  <li>Embedded with sensors & software</li>
+                  <li>Exchanging data over the internet</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h5><i class="bi bi-lightning"></i> Importance in Modern Industries</h5>
+                <ul>
+                  <li>Smarter operations</li>
+                  <li>Data-driven optimization</li>
+                  <li>Enhanced user experience</li>
+                </ul>
+              </div>
+            </div>
+            <p class="mt-3">
+              IoT is revolutionizing aviation by improving aircraft/airport management and passenger experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide2">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title"><i class="bi bi-airplane"></i> IoT in Aviation</h2>
+          <p class="mt-2">
+            IoT in aviation: Integration of connected devices in aircraft and airports for data collection and analysis.
+          </p>
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <div class="feature-card">
+                <h5>🛠️ Aircraft Maintenance</h5>
+                <p>Real-time monitoring & predictive analytics.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature-card">
+                <h5>✈️ Flight Operations</h5>
+                <p>Fuel optimization & route planning.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature-card">
+                <h5>🎒 Passenger Experience</h5>
+                <p>Smart luggage tracking & personalization.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide3">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title"><i class="bi bi-tools"></i> IoT in Aircraft Maintenance</h2>
+          <p class="mt-2">
+            IoT transforms aircraft maintenance by enabling real-time monitoring and predictive maintenance.
+          </p>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <h5><i class="bi bi-binoculars"></i> Real-time Monitoring</h5>
+              <ul>
+                <li>Sensors monitor temperature, pressure, vibration.</li>
+                <li>Provides constant overview of aircraft health.</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5><i class="bi bi-graph-up"></i> Predictive Maintenance</h5>
+              <ul>
+                <li>Analyzes sensor data to predict issues.</li>
+                <li>Prevents breakdowns & reduces downtime.</li>
+              </ul>
+            </div>
+          </div>
+          <h5 class="mt-3"><i class="bi bi-hand-thumbs-up"></i> Benefits</h5>
+          <ul>
+            <li>Reduced downtime.</li>
+            <li>Cost savings.</li>
+            <li>Increased safety.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide4">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title"><i class="bi bi-send"></i> IoT in Flight Operations</h2>
+          <p class="mt-2">
+            IoT improves flight operations by providing real-time data for air traffic control and climate monitoring.
+          </p>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <h5><i class="bi bi-traffic"></i> Real-time Data for Air Traffic Control</h5>
+              <ul>
+                <li>Informed decisions on flight paths.</li>
+                <li>Optimizes flight paths to avoid congestion.</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5><i class="bi bi-cloud-sun"></i> Climate Conditions Monitoring</h5>
+              <ul>
+                <li>Real-time weather information.</li>
+                <li>Informed route adjustments.</li>
+              </ul>
+            </div>
+          </div>
+          <h5 class="mt-3"><i class="bi bi-lightning-charge"></i> Efficiency Improvements</h5>
+          <ul>
+            <li>Fuel consumption optimization.</li>
+            <li>Efficient route planning.</li>
+            <li>Monitoring aircraft performance.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide5">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title"><i class="bi bi-stars"></i> Revolutionizing Aviation Through IoT Innovation</h2>
+          <p class="mt-2">
+            IoT is transforming aviation's technical and operational aspects.
+          </p>
+          <p class="mt-3">
+            Next, we'll explore customer-centric and infrastructure-related applications.
+          </p>
+          <ul>
+            <li>Enhancing passenger experience.</li>
+            <li>Improving airport operations.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide6">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title"><i class="bi bi-emoji-smile"></i> Enhancing Passenger Experience</h2>
+          <p class="mt-2">
+            IoT aims to provide a more personalized, connected, and convenient journey.
+          </p>
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <h5><i class="bi bi-person-check"></i> Personalized Services</h5>
+              <ul>
+                <li>Tailored in-flight entertainment.</li>
+                <li>Customized dining choices.</li>
+                <li>Personalized seat selection.</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5><i class="bi bi-wifi"></i> Real-time Updates & Connectivity</h5>
+              <ul>
+                <li>Flight status and gate changes.</li>
+                <li>Accessible via connected devices.</li>
+                <li>Seamless connectivity.</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5><i class="bi bi-bag-check"></i> Smart Luggage Tracking</h5>
+              <ul>
+                <li>Real-time monitoring of baggage.</li>
+                <li>Increased customer satisfaction.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide7">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title"><i class="bi bi-airport"></i> IoT in Smart Airports & Baggage Handling</h2>
+          <p class="mt-2">
+            IoT creates smart airports that enhance efficiency and convenience.
+          </p>
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <h5><i class="bi bi-gear"></i> Automated Systems</h5>
+              <ul>
+                <li>Control of lighting & HVAC.</li>
+                <li>Energy optimization.</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5><i class="bi bi-map"></i> Infrastructure Management</h5>
+              <ul>
+                <li>Real-time monitoring of runways.</li>
+                <li>Timely maintenance.</li>
+                <li>Resource optimization.</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5><i class="bi bi-luggage"></i> Efficient Baggage Tracking</h5>
+              <ul>
+                <li>Real-time monitoring of baggage.</li>
+                <li>Streamlined processes.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide8">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title"><i class="bi bi-gift"></i> Benefits of IoT</h2>
+          <p class="mt-2">
+            IoT brings many benefits to the aviation industry.
+          </p>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <h5><i class="bi bi-tools"></i> Predictive Maintenance</h5>
+              <ul>
+                <li>Continuous monitoring.</li>
+                <li>Proactive issue identification.</li>
+                <li>Reduced downtime.</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5><i class="bi bi-graph-up"></i> Operational Efficiency</h5>
+              <ul>
+                <li>Optimized flight routes.</li>
+                <li>Reduced fuel consumption.</li>
+                <li>Streamlined operations.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <h5><i class="bi bi-person-check"></i> Enhanced Passenger Experience</h5>
+              <ul>
+                <li>Personalized services.</li>
+                <li>Real-time updates.</li>
+                <li>Smart luggage tracking.</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5><i class="bi bi-shield-lock"></i> Safety and Security</h5>
+              <ul>
+                <li>Real-time monitoring.</li>
+                <li>Predictive analytics.</li>
+                <li>IoT-enabled security.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide9">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title"><i class="bi bi-exclamation-triangle"></i> Challenges and Future Trends</h2>
+          <p class="mt-2">
+            IoT in aviation faces challenges but has a promising future.
+          </p>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <h5><i class="bi bi-wrench-adjustable"></i> Technical Challenges</h5>
+              <ul>
+                <li>Integration complexity.</li>
+                <li>Data storage and processing.</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5><i class="bi bi-shield-lock"></i> Security Concerns</h5>
+              <ul>
+                <li>Risk of cyberattacks.</li>
+                <li>Data privacy protection.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <h5><i class="bi bi-cash-coin"></i> Implementation Costs</h5>
+              <ul>
+                <li>Initial investment.</li>
+                <li>Long-term benefits vs. costs.</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5><i class="bi bi-graph-up"></i> Emerging Technologies</h5>
+              <ul>
+                <li>AI integration.</li>
+                <li>5G networks.</li>
+                <li>Innovative solutions.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide10">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title"><i class="bi bi-life-preserver"></i> Enhancing Safety through IoT</h2>
+          <p class="mt-2">
+            IoT enhances aviation safety through real-time monitoring and predictive analytics.
+          </p>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <h5><i class="bi bi-sensors"></i> IoT Sensors for Real-time Monitoring</h5>
+              <ul>
+                <li>Continuous monitoring of components.</li>
+                <li>Real-time data on temperature, pressure, etc.</li>
+                <li>Early detection of anomalies.</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5><i class="bi bi-graph-up"></i> Predictive Analytics</h5>
+              <ul>
+                <li>Identifies potential safety issues.</li>
+                <li>Forecasts component failures.</li>
+                <li>Proactive prevention of accidents.</li>
+              </ul>
+            </div>
+          </div>
+          <h5 class="mt-3"><i class="bi bi-exclamation-octagon"></i> Emergency Response</h5>
+          <ul>
+            <li>Provides critical information.</li>
+            <li>Guides response actions.</li>
+            <li>Improves effectiveness.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide11">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title"><i class="bi bi-airplane-engines"></i> Optimizing Fleet Management</h2>
+          <p class="mt-2">
+            IoT enhances fleet management through real-time data and insights.
+          </p>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <h5><i class="bi bi-geo-alt"></i> Real-time Tracking</h5>
+              <ul>
+                <li>Tracks aircraft locations.</li>
+                <li>Monitors flight progress.</li>
+                <li>Coordinates ground operations.</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5><i class="bi bi-fuel-pump"></i> Fuel Management</h5>
+              <ul>
+                <li>Optimizes fuel consumption.</li>
+                <li>Provides data on factors affecting efficiency.</li>
+                <li>Monitors engine performance.</li>
+              </ul>
+            </div>
+          </div>
+          <h5 class="mt-3"><i class="bi bi-calendar-check"></i> Maintenance Scheduling</h5>
+          <ul>
+            <li>Simplifies scheduling.</li>
+            <li>Plans based on actual wear.</li>
+            <li>Optimizes resource use</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide12">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title"><i class="bi bi-tree"></i> Promoting Environmental Sustainability</h2>
+          <p class="mt-2">
+            IoT helps the aviation industry reduce its environmental impact.
+          </p>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <h5><i class="bi bi-cloud-upload"></i> Reducing Carbon Emissions</h5>
+              <ul>
+                <li>Optimizes flight paths.</li>
+                <li>Minimizes fuel burn.</li>
+                <li>Reduces emissions.</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5><i class="bi bi-lightning-charge"></i> Smart Energy Management</h5>
+              <ul>
+                <li>Optimizes energy usage in airports.</li>
+                <li>Monitors and controls systems.</li>
+                <li>Reduces energy consumption.</li>
+              </ul>
+            </div>
+          </div>
+          <h5 class="mt-3"><i class="bi bi-recycle"></i> Waste Reduction</h5>
+          <ul>
+            <li>Tracks resource usage.</li>
+            <li>Improves efficiency.</li>
+            <li>Facilitates sustainable practices.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide13">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title"><i class="bi bi-graph-up"></i> Leveraging Predictive Analytics</h2>
+          <p class="mt-2">
+            IoT enhances decision-making and prevents issues with predictive analytics.
+          </p>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <h5><i class="bi bi-tools"></i> Predictive Maintenance</h5>
+              <ul>
+                <li>Predicts component failures.</li>
+                <li>Performs maintenance proactively.</li>
+                <li>Reduces downtime.</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5><i class="bi bi-lightbulb"></i> Data-Driven Insights</h5>
+              <ul>
+                <li>Improves decision-making.</li>
+                <li>Optimizes flight plans.</li>
+                <li>Tailors services.</li>
+              </ul>
+            </div>
+          </div>
+          <h5 class="mt-3"><i class="bi bi-shield-check"></i> Preventing Issues</h5>
+          <ul>
+            <li>Identifies potential problems.</li>
+            <li>Forecasts when and where issues arise.</li>
+            <li>Allows for preventive measures.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide14">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title"><i class="bi bi-gear"></i> IoT Standards and Protocols</h2>
+          <p class="mt-2">
+            Standards and protocols ensure smooth and secure IoT implementation.
+          </p>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <h5><i class="bi bi-file-earmark-text"></i> Industry Standards Overview</h5>
+              <ul>
+                <li>MQTT: Lightweight for data transmission.</li>
+                <li>CoAP: Lightweight for device communication.</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5><i class="bi bi-check-circle"></i> Importance of Compliance</h5>
+              <ul>
+                <li>Regulatory bodies ensure safety.</li>
+                <li>IATA guidelines for best practices.</li>
+                <li>FAA regulations for certification.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide15">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title"><i class="bi bi-shield-lock"></i> Revolutionizing Airport Security</h2>
+          <p class="mt-2">
+            IoT enhances airport security through smart surveillance and access control.
+          </p>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <h5><i class="bi bi-camera-video"></i> Smart Surveillance</h5>
+              <ul>
+                <li>Real-time monitoring.</li>
+                <li>Automatic detection of unusual activity.</li>
+                <li>AI-powered analysis.</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5><i class="bi bi-person-bounding-box"></i> Access Control</h5>
+              <ul>
+                <li>Biometric systems (facial recognition).</li>
+                <li>Authorized personnel access.</li>
+                <li>Improved identity verification.</li>
+              </ul>
+            </div>
+          </div>
+          <h5 class="mt-3"><i class="bi bi-exclamation-triangle"></i> Threat Prevention</h5>
+          <ul>
+            <li>Detects unauthorized access,</li>
+            <li>Monitors environmental hazards.</li>
+            <li>Provides real-time information for response.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide16">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title"><i class="bi bi-database"></i> Harnessing IoT Data</h2>
+          <p class="mt-2">
+            Data analytics improves decision-making and efficiency.
+          </p>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <h5><i class="bi bi-bar-chart-line"></i> Big Data Analytics</h5>
+              <ul>
+                <li>Processes massive data.</li>
+                <li>Extracts valuable insights.</li>
+                <li>Optimizes operations.</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5><i class="bi bi-cpu"></i> Data Processing</h5>
+              <ul>
+                <li>Requires robust systems.</li>
+                <li>Collects and stores data.</li>
+                <li>Uses machine learning.</li>
+              </ul>
+            </div>
+          </div>
+          <h5 class="mt-3"><i class="bi bi-lightbulb"></i> Improving Efficiency</h5>
+          <ul>
+            <li>Informed decisions.</li>
+            <li>Timely repairs.</li>
+            <li>Optimized boarding.</li>
+            <li>Efficient resource allocation.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide17">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title"><i class="bi bi-handshake"></i> Building the IoT Ecosystem</h2>
+          <p class="mt-2">
+            Collaborations are essential for IoT in aviation.
+          </p>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <h5><i class="bi bi-building"></i> Examples</h5>
+              <ul>
+                <li>Airlines & Tech Companies (Delta/IBM).</li>
+                <li>Airports & IoT Providers (Changi).</li>
+                <li>Aircraft Manufacturers & Innovators (Boeing/Microsoft).</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5><i class="bi bi-rocket"></i> Enhancing Operations</h5>
+              <ul>
+                <li>Access to expertise.</li>
+                <li>Development of solutions.</li>
+                <li>Knowledge sharing.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide18">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title"><i class="bi bi-file-earmark-text"></i> Case Studies and Conclusion</h2>
+          <p class="mt-2">
+            Real-world examples and key takeaways.
+          </p>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <h5><i class="bi bi-check-circle"></i> Case Studies</h5>
+              <ul>
+                <li>Rolls-Royce Engine Health Management.</li>
+                <li>Delta Air Lines' RFID Baggage Tracking.</li>
+                <li>Changi Airport's Smart Airport Initiative.</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5><i class="bi bi-flag-checkered"></i> Conclusion</h5>
+              <ul>
+                <li>IoT revolutionizes aviation.</li>
+                <li>Addresses challenges.</li>
+                <li>Promising future with AI and 5G.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide19">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title"><i class="bi bi-link-45deg"></i> References and Links</h2>
+          <p class="mt-2">
+            Resources for further reading.
+          </p>
+          <h5><i class="bi bi-file-earmark-pdf"></i> Research Papers</h5>
+          <ul>
+            <li>
+              <a href="https://www.longdom.org/open-access-pdfs/artificial-intelligence-iot-and-their-future-on-aviation-safety.pdf"
+                target="_blank">
+                Artificial Intelligence, IoT and their Future on Aviation Safety
+              </a>
+            </li>
+            <li>
+              <a href="https://tosiron.com/papers/2018/amelia_CCNC18.pdf" target="_blank">
+                AMELIA: An Application of the Internet of Things for Aviation Safety
+              </a>
+            </li>
+            <li>
+              <a href="https://inria.hal.science/hal-01768513v1/file/978-3-319-68557-1_11_Chapter.pdf" target="_blank">
+                Assessing the Potential of IoT in Aerospace
+              </a>
+            </li>
+
+          </ul>
+
+          <h5><i class="bi bi-file-earmark-pdf"></i> White Papers</h5>
+          <ul>
+            <li>
+              <a href="https://www.tcs.com/content/dam/global-tcs/en/pdfs/insights/whitepapers/soaring-into-the-future-iot-transforming-the-airlines-industry.pdf"
+                target="_blank">
+                How the IoT Fuels Airlines Industry's Flight into the Future
+              </a>
+            </li>
+            <li>
+              <a href="https://www.ifs.com/assets/enterprise-resource-planning/aviation-digital-transformation"
+                target="_blank">
+                Aviation Digital Transformation White Paper
+              </a>
+            </li>
+            <li>
+              <a href="https://www.iata.org/contentassets/2d997082f3c84c7cba001f506edd2c2e/ai-white-paper.pdf"
+                target="_blank">
+                AI IN AVIATION
+              </a>
+            </li>
+          </ul>
+
+          <h5><i class="bi bi-file-earmark-pdf"></i> Technical Papers</h5>
+          <ul>
+            <li>
+              <a href="https://tosiron.com/papers/2018/amelia_CCNC18.pdf" target="_blank">
+                AMELIA: An Application of the Internet of Things for Aviation Safety
+              </a>
+            </li>
+            <li>
+              <a href="https://www.primescholars.com/articles/artificial-intelligence-iot-and-their-future-on-aviation-safety.pdf"
+                target="_blank">
+                Artificial Intelligence, IoT and their Future on Aviation Safety
+              </a>
+            </li>
+            <li>
+              <a href="https://rjpn.org/ijcspub/papers/IJCSP22B1221.pdf" target="_blank">
+                A Brief Review on IoT, its Applications, Challenges & Future Aspects in Aviation Industry
+              </a>
+            </li>
+          </ul>
+
+          <h5><i class="bi bi-globe"></i> Additional Resources</h5>
+          <ul>
+            <li>
+              <a href="https://www.tcs.com/content/dam/global-tcs/en/pdfs/insights/whitepapers/soaring-into-the-future-iot-transforming-the-airlines-industry.pdf"
+                target="_blank">
+                Internet of Things in Aviation - TCS
+              </a>
+            </li>
+            <li>
+              <a href="https://www.iata.org/contentassets/2d997082f3c84c7cba001f506edd2c2e/ai-white-paper.pdf"
+                target="_blank">
+                Internet of Things in Aviation - IATA
+              </a>
+            </li>
+            <li>
+              <a href="https://www.ifs.com/assets/enterprise-resource-planning/aviation-digital-transformation"
+                target="_blank">
+                Internet of Things in Aviation - IFS
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

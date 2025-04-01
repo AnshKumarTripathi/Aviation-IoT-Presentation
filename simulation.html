@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IoT Aviation Simulation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="bi bi-broadcast"></i> IoT in Aviation</a>
+      <div class="d-flex">
+        <a href="index.html" class="btn btn-light mx-1"><i class="bi bi-house-fill"></i> Main Presentation</a>
+        <button id="fullscreenBtn" class="btn btn-light mx-1" onclick="toggleFullscreen()">
+          <i class="bi bi-fullscreen"></i> Fullscreen
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mt-5 pt-5">
+    <div class="card shadow">
+      <div class="card-body">
+        <h2 class="card-title"><i class="bi bi-play-circle"></i> Interactive IoT Simulation</h2>
+        <div class="simulation-container">
+          <div class="row">
+            <div class="col-md-8">
+              <h5>IoT Sensor Visualization</h5>
+              <div class="video-container mb-4">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/VHBmVH53YjI?si=lqR7mkdENFXWc4YC"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/simulation.js"></script>
+</body>
+
+</html>

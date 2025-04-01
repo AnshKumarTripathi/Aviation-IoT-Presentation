@@ -1,0 +1,225 @@
+:root {
+  --space-black: #121212;
+  --deep-blue: #0a192f;
+  --neon-blue: #00d8ff;
+  --neon-purple: #6e00ff;
+  --tech-gray: #2d3748;
+  --light-panel: #1e2b3a;
+  --glow-effect: 0 0 10px rgba(0, 216, 255, 0.6);
+  --grid-lines: rgba(0, 216, 255, 0.1);
+}
+
+* {
+  color: #e6e6e6;
+}
+
+body {
+  background: linear-gradient(135deg, var(--space-black), var(--deep-blue));
+  color: #e6e6e6;
+  font-family: "Titillium Web", "Segoe UI", sans-serif;
+  position: relative;
+}
+
+/* Grid background for futuristic look */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(var(--grid-lines) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-lines) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: -1;
+}
+
+.navbar {
+  background: var(--light-panel) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid var(--neon-blue);
+}
+
+.navbar-brand {
+  color: var(--neon-blue) !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: var(--glow-effect);
+}
+
+.btn-light {
+  background: transparent;
+  border: 1px solid var(--neon-blue);
+  color: var(--neon-blue);
+  transition: all 0.3s;
+}
+
+.btn-light:hover {
+  background: var(--neon-blue);
+  color: var(--deep-blue);
+  box-shadow: var(--glow-effect);
+}
+
+.progress {
+  background: var(--light-panel);
+  height: 4px !important;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple));
+  box-shadow: var(--glow-effect);
+}
+
+.slide {
+  display: none;
+  margin: 2rem 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card {
+  background: var(--light-panel);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.card-title {
+  color: var(--neon-blue);
+  border-bottom: 1px solid var(--neon-blue);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  background: rgba(30, 43, 58, 0.7);
+  border-radius: 10px;
+  transition: all 0.3s;
+  border-left: 3px solid var(--neon-blue);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--glow-effect);
+  background: rgba(30, 43, 58, 0.9);
+}
+
+.feature-card h5 {
+  color: var(--neon-blue);
+}
+
+.accordion-button {
+  background: var(--tech-gray);
+  color: var(--neon-blue);
+  border-left: 3px solid var(--neon-blue);
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--deep-blue);
+  color: white;
+}
+
+.accordion-body {
+  background: var(--light-panel);
+  color: #e6e6e6;
+}
+
+.list-group-item {
+  background: var(--tech-gray);
+  color: #e6e6e6;
+  border-color: var(--neon-blue);
+}
+
+.list-group-item a {
+  color: var(--neon-blue);
+  text-decoration: none;
+}
+
+.list-group-item a:hover {
+  text-shadow: var(--glow-effect);
+}
+
+/* Animation for IoT elements */
+@keyframes pulse {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+.iot-element {
+  animation: pulse 2s infinite;
+}
+
+/* Simulation page specific styles */
+.simulation-container {
+  background: rgba(10, 25, 47, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid var(--neon-blue);
+  box-shadow: inset 0 0 20px rgba(0, 216, 255, 0.2);
+}
+
+.sim-controls {
+  background: var(--tech-gray);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid var(--neon-purple);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Data visualization placeholders */
+.data-viz {
+  height: 300px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 216, 255, 0.05),
+    rgba(110, 0, 255, 0.05)
+  );
+  border-radius: 10px;
+  border: 1px dashed var(--neon-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--neon-blue);
+  margin-bottom: 20px;
+}
+
+h5 {
+  color: #e6e6e6;
+}
