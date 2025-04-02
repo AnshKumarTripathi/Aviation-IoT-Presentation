@@ -5,6 +5,7 @@
   --neon-purple: #6e00ff;
   --tech-gray: #2d3748;
   --light-panel: #1e2b3a;
+  --interactive-sim: #00ff00;
   --glow-effect: 0 0 10px rgba(0, 216, 255, 0.6);
   --grid-lines: rgba(0, 216, 255, 0.1);
 }
@@ -57,6 +58,18 @@ body::before {
 
 .btn-light:hover {
   background: var(--neon-blue);
+  color: var(--deep-blue);
+  box-shadow: var(--glow-effect);
+}
+.btn-light-g {
+  background: transparent;
+  border: 1px solid var(--interactive-sim);
+  color: var(--interactive-sim);
+  transition: all 0.3s;
+}
+
+.btn-light-g:hover {
+  background: var(--interactive-sim);
   color: var(--deep-blue);
   box-shadow: var(--glow-effect);
 }
